@@ -34,7 +34,7 @@ cargo build
 LANG=en
 curl 'https://dumps.wikimedia.org/'$LANG'wiki/latest/'$LANG'wiki-latest-externallinks.sql.gz' |
 	gunzip |
-	</path/to/executable>/wikipedia-externallinks-fast-extraction > urls.txt
+	data/wikipedia-externallinks-fast-extraction/target/debug/wikipedia-externallinks-fast-extraction > urls.txt
 ```
 
 The urls will be streamed into urls.txt as they are downloaded.
